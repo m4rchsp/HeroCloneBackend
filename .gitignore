@@ -1,6 +1,7 @@
 ###Pessoal
 .passos/
-.vscode/
+.vscode/*
+!.vscode/launch.json
 
 
 
