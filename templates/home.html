@@ -3,5 +3,10 @@
 {% block title %}Loja Python{% endblock %}
 
 {% block content %}
-    Olá!
+    {% if user.is_authenticated %}
+                    Olá {{ user }}! 
+                    
+                    
+    {% endif %}
+    
 {% endblock %}

@@ -3,8 +3,8 @@ from . import views
 
 app_name = "pages"
 
-utlpatterns = [
-    path(" ", views.HomePageView.as_view(), name="home"),
+urlpatterns = [
+    path("", views.HomePageView.as_view(), name="home"),
 
 
 ]
