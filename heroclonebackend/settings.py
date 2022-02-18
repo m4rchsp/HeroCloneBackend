@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sites', 
     'django.contrib.staticfiles',
     # My Apps
+    'pages.apps.PagesConfig',
 
     # 3rd Party Apps
     'allauth',
@@ -61,7 +62,7 @@ ROOT_URLCONF = 'heroclonebackend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [ BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -132,6 +133,8 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 SITE_ID = 1
+
+LOGIN_REDIRECT_URL = "/"
 
 
 
